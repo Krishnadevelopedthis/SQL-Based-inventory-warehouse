@@ -1,4 +1,23 @@
+
+
+/* -------------custom bg --------------------------- */
+body{
+    background:#111;
+    color:white;
+    transition:.3s;
+}
+
+body.light{
+    background:#f7f7f7;
+    color:#111;
+}
+
+
 /* ---------- Sidebar nav ---------- */
+
+
+
+
 .nav-link {
   display: flex;
   align-items: center;
