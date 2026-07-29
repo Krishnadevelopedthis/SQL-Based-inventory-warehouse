@@ -522,25 +522,38 @@ async function loadReports() {
   
 }
 
-// ---------- Init ----------
-showView("dashboard");
 
 
 
 const toggle = document.getElementById("themeToggle");
 
+const savedTheme = localStorage.getItem("theme");
+
+if(savedTheme === "light"){
+    document.body.classList.add("light");
+    toggle.classList.add("active");
+    toggle.querySelector(".toggle-circle").textContent="☀️";
+}
+
 toggle.addEventListener("click",()=>{
 
     document.body.classList.toggle("light");
+    toggle.classList.toggle("active");
 
     if(document.body.classList.contains("light")){
         localStorage.setItem("theme","light");
+        toggle.querySelector(".toggle-circle").textContent="☀️";
     }else{
         localStorage.setItem("theme","dark");
+        toggle.querySelector(".toggle-circle").textContent="🌙";
     }
 
 });
 
 
+
+
+// ---------- Init ----------
+showView("dashboard");
 
 
