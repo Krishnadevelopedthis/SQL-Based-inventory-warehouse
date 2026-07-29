@@ -1,5 +1,8 @@
 # IntelliSense Warehouse
 
+
+working 🔗 link :- https://sql-based-inventory-warehouse-front.vercel.app/
+
 Stack: **PostgreSQL** (triggers, functions, procedures, cursor) + **FastAPI** (Python backend) + **HTML/Tailwind/JS** (CMS-style dashboard frontend).
 
 The frontend is a single-page admin panel: a fixed sidebar (Dashboard, Products,
