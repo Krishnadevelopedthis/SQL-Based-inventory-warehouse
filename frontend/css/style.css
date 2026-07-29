@@ -1,17 +1,27 @@
 
 
 /* -------------custom bg --------------------------- */
-body{
-    background:#111;
-    color:white;
-    transition:.3s;
+:root{
+    --bg:#111111;
+    --text:#ffffff;
+    --card:#1d1d1d;
+    --cardText:#ffffff;
+    --table:#1d1d1d;
 }
 
 body.light{
-    background:#f7f7f7;
-    color:#111;
+    --bg:#f7f7f7;
+    --text:#111111;
+    --card:#ffffff;
+    --cardText:#111111;
+    --table:#ffffff;
 }
 
+body{
+    background:var(--bg);
+    color:var(--text);
+    transition:.3s;
+}
 
 /* ---------- Sidebar nav ---------- */
 
@@ -67,7 +77,8 @@ body.light{
 
 /* ---------- Cards / stats ---------- */
 .card {
-  background: #fff;
+  background:var(--card);
+    color:var(--cardText);
   border: 1px solid #E4E7EC;
   border-radius: 12px;
   padding: 1.25rem;
@@ -76,11 +87,12 @@ body.light{
   font-family: 'Sora', sans-serif;
   font-weight: 700;
   font-size: 0.95rem;
-  color: #1A2233;
+  color:var(--cardText);
   margin-bottom: 0.75rem;
 }
 .stat-card {
-  background: #fff;
+   background:var(--card);
+    color:var(--cardText);
   border: 1px solid #E4E7EC;
   border-radius: 12px;
   padding: 1rem 1.25rem;
@@ -102,7 +114,8 @@ body.light{
 
 /* ---------- Inputs / buttons ---------- */
 .input {
-  background: #F4F6F9;
+ background:var(--card);
+    color:var(--cardText);
   border: 1px solid #E4E7EC;
   color: #1A2233;
   padding: 0.55rem 0.8rem;
@@ -170,7 +183,7 @@ body.light{
 .data-table td {
   padding: 0.6rem 0.75rem;
   border-bottom: 1px solid #F0F1F4;
-  color: #1A2233;
+ color:var(--cardText);
   white-space: nowrap;
 }
 .data-table tr:hover td { background: #FAFBFC; }
