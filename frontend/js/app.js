@@ -1,4 +1,4 @@
-const API_URL = "https://sql-based-inventory-warehouse.onrender.com/";
+const API_URL = "https://sql-based-inventory-warehouse.onrender.com";
 
 // ---------- Toasts ----------
 function toast(message, type = "success") {
