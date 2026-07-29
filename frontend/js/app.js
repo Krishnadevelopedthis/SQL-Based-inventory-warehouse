@@ -519,7 +519,28 @@ async function loadReports() {
   } catch (err) {
     toast(`Failed to load reports: ${err.message}`, "error");
   }
+  
 }
 
 // ---------- Init ----------
 showView("dashboard");
+
+
+
+const toggle = document.getElementById("themeToggle");
+
+toggle.addEventListener("click",()=>{
+
+    document.body.classList.toggle("light");
+
+    if(document.body.classList.contains("light")){
+        localStorage.setItem("theme","light");
+    }else{
+        localStorage.setItem("theme","dark");
+    }
+
+});
+
+
+
+
