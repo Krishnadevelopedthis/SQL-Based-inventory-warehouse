@@ -4,7 +4,7 @@
 working 🔗 link :- https://sql-based-inventory-warehouse-front.vercel.app/
 
      Frontend is deployed on vercel 
-     Backend on Vercel 
+     Backend on Render
      Database on Neon db
 
 Stack: **PostgreSQL** (triggers, functions, procedures, cursor) + **FastAPI** (Python backend) + **HTML/Tailwind/JS** (CMS-style dashboard frontend).
