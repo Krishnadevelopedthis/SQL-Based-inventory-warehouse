@@ -73,7 +73,7 @@ class PurchaseCreate(BaseModel):
     product_id: int
     supplier_id: int
     quantity_purchased: int
-    unit_cost: float
+    unit_cost: Decimal
 
 
 class PurchaseOut(PurchaseCreate):
